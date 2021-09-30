@@ -1,5 +1,5 @@
-import { Route, BrowserRouter } from "react-router-dom";
-import { AnimatedSwitch } from 'react-router-transition';
+import { Route, BrowserRouter, Switch } from "react-router-dom";
+import {AnimatePresence} from 'framer-motion';
 
 import Home from './pages/Home/index';
 import AboutMe from './pages/AboutMe/index';
@@ -23,18 +23,15 @@ export default function App() {
           <Services/> 
           <Contact/>
         </div>
-        <AnimatedSwitch
-          atEnter={{ opacity: 0 }}
-          atLeave={{ opacity: 0 }}
-          atActive={{ opacity: 1 }}
-          className="switch-wrapper large-content"
-        >
-            <Route path="/" exact component={Home}></Route>
-            <Route path="/aboutme" exact component={AboutMe}></Route>
-            <Route path="/projects" exact component={Projects}></Route>
-            <Route path="/services" exact component={Services}></Route>
-            <Route path="/contact" exact component={Contact}></Route>
-        </AnimatedSwitch>
+        <AnimatePresence exitBeforeEnter>
+          <Switch>
+              <Route path="/" exact component={Home}></Route>
+              <Route path="/aboutme" exact component={AboutMe}></Route>
+              <Route path="/projects" exact component={Projects}></Route>
+              <Route path="/services" exact component={Services}></Route>
+              <Route path="/contact" exact component={Contact}></Route>
+          </Switch>
+        </AnimatePresence>
       </div>
     </BrowserRouter>
   );

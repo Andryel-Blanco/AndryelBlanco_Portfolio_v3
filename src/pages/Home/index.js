@@ -1,7 +1,10 @@
 import { useHistory } from 'react-router';
-import './style.scss';
+import {motion} from 'framer-motion';
+
 
 import illustrationOne from '../../assets/images/illustrationOne.png';
+import './style.scss';
+
 
 export default function Home(){
     const history = useHistory();
@@ -11,18 +14,29 @@ export default function Home(){
     }
 
     return(
-        <div className='page-home'> 
-            <div className='main-content' >
-                <div className='text-container'>
-                    <span className='top-span'>Olá, eu sou</span>
-                    <h1 className='name'>Andryel Blanco</h1>
-                    <span className='bottom-span'>Desenvolvedor Front-End</span>
-                    <div className='button'>
-                        <h1 className='button-text' onClick={()=>{handleChangePage()}}>Ver Mais</h1>
+        <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} transition={{ duration: 1 }}>
+            <div className='page-home'> 
+                <div className='main-content' >
+                    <div className='text-container'>
+                        <span className='top-span'>Olá, eu sou</span>
+                        <h1 className='name'>Andryel Blanco</h1>
+                        <span className='bottom-span'>Desenvolvedor Front-End</span>
+                        <div className='button'>
+                            <h1 className='button-text' onClick={()=>{handleChangePage()}}>Ver Mais</h1>
+                        </div>
                     </div>
+                    <motion.div
+                        initial={{ scale: 0 }}
+                        animate={{ rotate: 360, scale: 1 }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 260,
+                            damping: 40,
+                        }}>
+                        <img src={illustrationOne} alt='Ilustração de um garoto em uma mesa com o braço para cima e fazendo símbolo da paz'/>
+                    </motion.div>
                 </div>
-                <img src={illustrationOne} alt='Ilustração de um garoto em uma mesa com o braço para cima e fazendo símbolo da paz'/>
             </div>
-        </div>
+        </motion.div>
     )
 }
