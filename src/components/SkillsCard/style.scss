@@ -1,0 +1,45 @@
+.skill-card{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding: 2% 0;
+
+    .skill-icon{
+        width: 200px;
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #DED9FF;
+    }
+
+    .progress-bar{
+        width: 90%;
+        height: 18px;
+
+        border-radius: 999999px;
+        background-color: #DED9FF;
+
+        .bar{
+            height: 18px;
+
+            border-radius: 999999px;
+            background-color: #563DF3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .percent{
+                font-size: 1rem;
+                color: #FFF;
+                font-weight: 700;
+            }
+        }
+    }
+
+}

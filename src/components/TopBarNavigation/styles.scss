@@ -1,0 +1,147 @@
+    
+nav{
+    // box-shadow: 0px 5px 33px -1px rgba(0, 0, 0, 0.05);
+
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0 2%;
+    margin-top: 2%;
+    z-index: 2;
+    gap: 2rem;
+
+    position: absolute;
+
+    .ball-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        
+        
+
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            text-decoration: none;
+            font-weight: 700;
+            font-size: .8rem;
+            color: #563DF3;
+
+            gap: .5rem;
+            transition: .7s ease;
+
+            .ball{
+                width: 25px;
+                height: 25px;
+                // background-color: #563DF3;
+    
+                border-radius: 99999999px;
+                border: 2px solid #563DF3;
+    
+                transition: .6s ease-in-out;
+                position: relative;
+    
+                
+            }
+
+            &:hover{
+                .ball{
+                    background-color: #563DF3;
+                }
+            }
+
+        }
+
+        
+    }
+    
+    .switch-wrapper {
+        position: relative;
+    }
+      
+    .switch-wrapper > div {
+        position: absolute;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-width : 1024px) {
+    nav{
+        // box-shadow: 0px 5px 33px -1px rgba(0, 0, 0, 0.05);
+    
+        width: 100%;
+        height: 80px;
+    
+        display: none;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 0 2%;
+        margin-top: 2%;
+        z-index: 2;
+        gap: 2rem;
+    
+        position: absolute;
+    
+        .ball-nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            
+            
+    
+            .navigation{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                text-decoration: none;
+                font-weight: 700;
+                font-size: .8rem;
+                color: #563DF3;
+    
+                gap: .5rem;
+                transition: .7s ease;
+    
+                .ball{
+                    width: 25px;
+                    height: 25px;
+                    // background-color: #563DF3;
+        
+                    border-radius: 99999999px;
+                    border: 2px solid #563DF3;
+        
+                    transition: .6s ease-in-out;
+                    position: relative;
+        
+                    
+                }
+    
+                &:hover{
+                    .ball{
+                        background-color: #563DF3;
+                    }
+                }
+    
+            }
+    
+            
+        }
+        
+        .switch-wrapper {
+            position: relative;
+        }
+          
+        .switch-wrapper > div {
+            position: absolute;
+        }
+    }
+}
+

@@ -1,0 +1,228 @@
+@media only screen and (min-device-width : 320px) and (max-width : 480px) {
+    .page-skills{
+        width: 100%;
+        height: fit-content;
+    
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .container{
+            width: 80%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 15%;
+            margin-bottom: 15%;
+            gap: 1.6rem;
+
+            .page-title{
+                font-size: 1.8rem;
+
+                font-weight: 800;
+                color: #280099;
+                
+                &::after{
+                    content: 'Arraste para o lado';
+                    display: block;
+
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: #FF522D;
+                    text-align: center;
+                }
+
+            }
+
+            .items-container{
+                width: 80%;
+                display: flex;
+                align-items: center;
+            
+                margin-top: 5%;
+                padding: 1%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width : 481px) and (max-width : 1024px) {
+    .page-skills{
+        width: 100%;
+        height: fit-content;
+    
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .container{
+            width: 80%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 15%;
+            margin-bottom: 15%;
+            gap: 1.6rem;
+
+            .page-title{
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: #280099;
+                
+                &::after{
+                    content: 'Arraste para o lado';
+                    display: block;
+
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #FF522D;
+                    text-align: center;
+                }
+
+            }
+
+            .items-container{
+                width: 80%;
+                display: flex;
+                align-items: center;
+            
+                margin-top: 5%;
+                padding: 1%;
+            }
+        }
+    }
+}
+
+@media only screen  and (min-width : 1025px) and (max-width : 1919px) {
+    .page-skills{
+        width: 100%;
+        height: 100vh;
+    
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .container{
+            width: 80%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 10%;
+            gap: 1.6rem;
+
+            .page-title{
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: #280099;
+                
+            }
+
+            .items-container{
+                width: 80%;
+                display: flex;
+                align-items: center;
+            
+                margin-top: 5%;
+                padding: 1%;
+            }
+        }
+    }
+
+}
+
+@media only screen  and (min-width : 1920px) {
+    .page-skills{
+        width: 100%;
+        height: 100vh;
+    
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .container{
+            width: 80%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 10%;
+            gap: 1.6rem;
+
+            .page-title{
+                font-size: 1.5rem;
+                font-weight: 800;
+                color: #280099;
+                
+            }
+
+            .items-container{
+                width: 80%;
+                display: flex;
+                align-items: center;
+            
+                margin-top: 5%;
+                padding: 1%;
+            }
+        }
+    }
+}
+
+@media only screen  and (min-width : 2559px) {
+    .page-skills{
+        width: 100%;
+        height: 100vh;
+    
+        background-color: #FFF;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .container{
+            width: 80%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 10%;
+            gap: 1.6rem;
+
+            .page-title{
+                font-size: 2.6rem;
+                font-weight: 800;
+                color: #280099;
+                
+            }
+
+            .items-container{
+                width: 80%;
+                display: flex;
+                align-items: center;
+            
+                margin-top: 10%;
+                padding: 1%;
+            }
+        }
+    }
+}
