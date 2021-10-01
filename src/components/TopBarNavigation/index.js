@@ -14,7 +14,7 @@ export default function TopBar(){
     }
     
     useEffect(() => {
-        setCurrentPage(currentPath);
+        setCurrentPage(currentPath); 
       }, [location]);
     
     return(
