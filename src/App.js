@@ -1,4 +1,4 @@
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Switch} from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
 
 import Home from './pages/Home/index';

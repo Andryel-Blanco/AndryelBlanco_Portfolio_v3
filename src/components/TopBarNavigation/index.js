@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles.scss';
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, } from "react-router-dom";
 
 export default function TopBar(){
 
@@ -12,7 +12,11 @@ export default function TopBar(){
     function handleCurrentPage(page){
         setCurrentPage(page);
     }
-
+    
+    useEffect(() => {
+        setCurrentPage(currentPath);
+      }, [location]);
+    
     return(
         <nav>
             <div className='ball-nav'>
