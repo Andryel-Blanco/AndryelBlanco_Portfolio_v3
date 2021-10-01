@@ -25,16 +25,7 @@ export default function Home(){
                             <h1 className='button-text' onClick={()=>{handleChangePage()}}>Ver Mais</h1>
                         </div>
                     </div>
-                    <motion.div
-                        initial={{ scale: 0 }}
-                        animate={{ rotate: 360, scale: 1 }}
-                        transition={{
-                            type: "spring",
-                            stiffness: 260,
-                            damping: 40,
-                        }}>
-                        <img src={illustrationOne} alt='Ilustração de um garoto em uma mesa com o braço para cima e fazendo símbolo da paz'/>
-                    </motion.div>
+                    <img src={illustrationOne} alt='Ilustração de um garoto em uma mesa com o braço para cima e fazendo símbolo da paz'/>
                 </div>
             </div>
         </motion.div>
